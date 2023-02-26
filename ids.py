@@ -141,7 +141,7 @@ C = df1.iloc[:,0:84]
 T = df1.iloc[:,85].values.reshape(-1,1)
 '''
 
-
+'''
 
 # Set the parameters for the LSTM layers
 
