@@ -244,4 +244,18 @@ for i in range(len(predictions)):
   f1 = 2 * (precision * recall) / (precision + recall)
   f1_scores.append(f1)
   '''
-  
+  '''
+  from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score
+
+# y_true contains the true labels for the test set
+# y_pred contains the predicted labels for the test set
+precision = precision_score(y_true, y_pred)
+recall = recall_score(y_true, y_pred)
+f1 = f1_score(y_true, y_pred)
+accuracy = accuracy_score(y_true, y_pred)
+
+print("Precision:", precision)
+print("Recall:", recall)
+print("F1-score:", f1)
+print("Accuracy:", accuracy)
+'''
